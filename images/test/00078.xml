@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>00078.jpg</filename>
+	<path>F:\AI_PROJECTS\object-detection\images\test\00078.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>200</width>
+		<height>150</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>car</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>7</xmin>
+			<ymin>55</ymin>
+			<xmax>194</xmax>
+			<ymax>140</ymax>
+		</bndbox>
+	</object>
+</annotation>

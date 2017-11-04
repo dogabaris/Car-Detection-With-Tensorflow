@@ -1,0 +1,26 @@
+<annotation verified="no">
+  <folder>train</folder>
+  <filename>00058</filename>
+  <path>F:\AI_PROJECTS\Data\train\00058.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>260</width>
+    <height>194</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>car</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <Difficult>0</Difficult>
+    <bndbox>
+      <xmin>10</xmin>
+      <ymin>34</ymin>
+      <xmax>254</xmax>
+      <ymax>174</ymax>
+    </bndbox>
+  </object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation verified="no">
+  <folder>test</folder>
+  <filename>00005</filename>
+  <path>F:\AI_PROJECTS\Data\test\00005.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>600</width>
+    <height>373</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>car</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <Difficult>0</Difficult>
+    <bndbox>
+      <xmin>137</xmin>
+      <ymin>150</ymin>
+      <xmax>591</xmax>
+      <ymax>337</ymax>
+    </bndbox>
+  </object>
+</annotation>
