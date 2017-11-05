@@ -141,7 +141,8 @@ with detection_graph.as_default():
           category_index,
           use_normalized_coordinates=True,
           line_thickness=8)
-
+      count = [category_index.get(value) for index,value in enumerate(classes[0]) if scores[0,index] > 0.5]
+      print(str(len(count)) + " otomobil var." )
       cv2.imshow('object detection', cv2.resize(image_np, (800,600)))
       if cv2.waitKey(25) & 0xFF == ord('q'):
         cv2.destroyAllWindows()
