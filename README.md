@@ -2,6 +2,17 @@
 Otomobil tespit etmek için Tensorflow Object Detection Api'si ile geliştirilmiş Convolutional Neural Network(CNN) sınıflandırıcısı.
 Modelin oluşturulması için aşağıdaki adımların izlenmesi gerekmektedir.
 
+### Gereksinimler:
+- fotoğrafları xml olarak etiketlemek için => LabelImg
+- tensorflow object detection api modelleri için => git clone https://github.com/tensorflow/models.git
+- tensorflow kurulumu için tensorflow/models/research dizininde setup yapılması => python setup.py install
+- proto dosyalarının python kodlarına çevrimi için => https://github.com/google/protobuf/releases/download/v3.4.0/protoc-3.4.0-win32.zip
+- tensorflow tutorial dosyalarının kullanımı için => pip install jupyter
+- kamera akışında sınıflandırma yapmak için => pip install opencv-python
+- pip install matplotlib
+- pip install pillow
+- pip install lxml
+
 ## Car-Detection-With-Tensorflow klonlanması/indirilmesi
 
 ```
@@ -39,6 +50,13 @@ Eğitim durdurulduktan sonra modelin görmediği otomobil fotoğraflarıyla dene
 ```
 python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/ssd_mobilenet_v1_pets.config --trained_checkpoint_prefix training/model.ckpt-(checkpointlerdeki en büyük sayı yazılmalı) --output_directory car_inference_graph
 ```
+### no module named 'nets' hatası alınıyorsa
+Sistem path'ine (tensorflow models'in bulunduğu dizin) models-master\research\object_detection ve 
+models-master\research\object_detection\models eklenmelidir. Linux kullanılıyorsa tensorflow/models/ klasöründe açılan konsolda
+```
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+```
+yazılması gerekmektedir.
 ## Sonuç grafının kullanılması için object detection api örnek kodunun değiştirilmesi
 Tensorflow object detection kodu(object_detection_tutorial.ipynb) dizinde açılan konsola aşağıdaki kod yazılarak jupyter notebook ile açılmalıdır.
 ```
