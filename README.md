@@ -2,6 +2,9 @@
 Otomobil tespit etmek için Tensorflow Object Detection Api'si ile geliştirilmiş Convolutional Neural Network(CNN) sınıflandırıcısı.
 Modelin oluşturulması için aşağıdaki adımların izlenmesi gerekmektedir.
 
+### İlgili paper:
+https://docs.google.com/document/d/1kAdHCibDpcTsyElk78JKOTX1ukuEa1TNrlgK3ApKRo0/edit
+
 ### Gereksinimler:
 - fotoğrafları xml olarak etiketlemek için => LabelImg
 - tensorflow object detection api modelleri için => git clone https://github.com/tensorflow/models.git
